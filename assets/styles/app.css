@@ -1,18 +1,23 @@
-:root {
-  --border: 1px solid red;
-}
-
 body,
 html {
   margin: 0;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+  background-color: var(--black);
 }
 
 img,
-a, i, span {
+label,
+a,
+i,
+span {
   display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
 }
 
 img {
@@ -21,23 +26,223 @@ img {
   object-position: left;
 }
 
-header {
-  border: var(--border);
-  padding: 20px;
+li,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-nav {
-  display: block;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 32px;
 }
+
+p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+p.p2 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+header,
+nav,
+div,
+section,
+aside,
+main,
+footer {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 90px;
+  line-height: 100px;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 58px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 32px;
+}
+
+:root {
+  --border: 1px solid red;
+  --black: rgb(0, 0, 0);
+  --white:#fff;
+  --brand_light: #0F6E8C;
+  --brand_deep: #05546D;
+  --black_light: #2d2f30;
+  --black_deep: #242eba;
+  --white: #fff;
+  --sans-serif: "Inter", sans-serif;
+  --play_fair: "Playfair Display", serif;
+  --Jakarta_Sans: "Plus Jakarta Sans", sans-serif;
+  --poppin_regular: "Poppins", sans-serif;
+}
+
+.container {
+  width: 1400px;
+  border: var(--border);
+  margin: auto;
+  padding: 0px 15px;
+}
+
+.header_body {
+  border: var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0px;
+}
+.header_body .logo {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background: #e00707;
+  color: var(--white);
+}
+.header_body .logo p {
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: --poppin_regular;
+  font-weight: 600;
+  position: relative;
+  top: 16px;
+  left: 16px;
+}
+.header_body .right_content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.header_body .right_content .nav {
+  flex: 1;
+  display: grid;
+  align-items: center;
+}
+.header_body .right_content .extra_links {
+  display: flex;
+  gap: 10px;
+}
+.header_body .right_content .extra_links .search a {
+  color: var(--white);
+  padding-top: 6px;
+}
+.header_body .right_content .extra_links .nav_control {
+  display: grid;
+  align-items: center;
+  display: none;
+}
+.header_body .right_content .extra_links .nav_control a span {
+  color: var(--white);
+  padding-top: 6px;
+}
+.header_body .right_content .extra_links .nav_control a:hover {
+  background-color: black;
+}
+@media (min-width: 0px) and (max-width: 991.9px) {
+  .header_body .right_content {
+    justify-content: center;
+  }
+  .header_body .right_content .nav {
+    order: 2;
+    flex: unset;
+  }
+  .header_body .right_content .nav ul li.close_nav {
+    display: block;
+  }
+  .header_body .right_content .extra_links {
+    order: 1;
+  }
+  .header_body .right_content .extra_links .nav_control {
+    display: grid;
+  }
+}
+
 nav ul {
   margin-bottom: 0;
   padding: 0;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
 }
 nav ul li {
   list-style-type: none;
 }
+nav ul li.close_nav {
+  display: none;
+}
+nav ul li.close_nav {
+  text-align: right;
+}
+nav ul li.close_nav a span {
+  margin-right: 21px;
+  font-size: 35px;
+}
 nav ul li a {
-  color: red;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--poppin_regular);
+}
+nav ul li a.active, nav ul li a:hover {
+  font-weight: 700;
+  background-color: var(--brand_deep);
+  color: var(--white);
+  border-radius: 4px;
+  padding: 5px 10px;
+  transition-duration: 0.3s;
+}
+@media (min-width: 0px) and (max-width: 999.9px) {
+  nav nav {
+    position: relative;
+  }
+  nav nav ul {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    flex-direction: column;
+    gap: 10px;
+    width: 30vw;
+    min-width: 150px;
+    top: 0;
+    padding: 30px 0px;
+    right: 0;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 30px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px black;
+    background-color: rgba(0, 0, 0, 0.0509803922);
+    z-index: 9;
+    background-color: rgba(5, 84, 109, 0.2117647059);
+  }
+  nav nav ul.active {
+    display: block;
+  }
+  nav nav ul li {
+    list-style-type: disc;
+    margin-bottom: 30px;
+  }
+  nav nav ul a {
+    font-size: 17px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
