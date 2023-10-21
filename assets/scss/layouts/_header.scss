@@ -1,4 +1,95 @@
-header {
+.header_body {
     border: var(--border);
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+
+    .logo {
+        // border: var(--border);
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+        background: #e00707;
+        color: var(--white);
+
+        p {
+            color: var(--white);
+            text-transform: uppercase;
+            font-family: --poppin_regular;
+            font-weight: 600;
+            position: relative;
+            top: 16px;
+            left: 16px;
+        }
+    }
+
+    .right_content {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+
+        .nav {
+            flex: 1;
+            display: grid;
+            align-items: center;
+
+        }
+
+        .extra_links {
+            display: flex;
+            gap: 10px;
+
+            .search {
+                a {
+                    color: var(--white);
+                    padding-top: 6px;
+                }
+            }
+
+            .nav_control {
+                display: grid;
+                align-items: center;
+                display: none;
+
+                a {
+
+                    span {
+                        color: var(--white);
+                        padding-top: 6px;
+                    }
+
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+            }
+        }
+
+        @include custom_media(0px, 991.9px) {
+            justify-content: center;
+
+            .nav {
+                order: 2;
+                flex: unset;
+
+                ul {
+                    li {
+                        &.close_nav {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .extra_links {
+                order: 1;
+
+                .nav_control {
+                    display: grid;
+                }
+            }
+        }
+    }
 }
