@@ -1,93 +1,108 @@
-.header_body {
-    border: var(--border);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 0px;
+header {
+    // border: var(--border);
 
-    .logo {
-        // border: var(--border);
-        height: 55px;
-        width: 55px;
-        border-radius: 50%;
-        background: #e00707;
-        color: var(--white);
-
-        p {
-            color: var(--white);
-            text-transform: uppercase;
-            font-family: --poppin_regular;
-            font-weight: 600;
-            position: relative;
-            top: 16px;
-            left: 16px;
-        }
-    }
-
-    .right_content {
-        flex: 1;
+    .header_body {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
+        padding: 25px 0px;
 
-        .nav {
+        .logo {
+            width: 60px;
+            height: 60px;
+            border: 3px solid red;
+            background-color: greenyellow;
+            border-radius: 50%;
+
+            p {
+                margin: 0;
+                font-size: 14px;
+                line-height: 24px;
+                position: relative;
+                text-transform: uppercase;
+                top: 16px;
+                left: 16px;
+                font-weight: bold;
+
+                &:hover {
+                    color: blue;
+                }
+            }
+        }
+
+        .right_content {
             flex: 1;
-            display: grid;
-            align-items: center;
-
-        }
-
-        .extra_links {
             display: flex;
-            gap: 10px;
-
-            .search {
-                a {
-                    color: var(--white);
-                    padding-top: 6px;
-                }
-            }
-
-            .nav_control {
-                display: grid;
-                align-items: center;
-                display: none;
-
-                a {
-
-                    span {
-                        color: var(--white);
-                        padding-top: 6px;
-                    }
-
-                    &:hover {
-                        background-color: black;
-                    }
-                }
-            }
-        }
-
-        @include custom_media(0px, 991.9px) {
-            justify-content: center;
+            justify-content: space-between;
 
             .nav {
-                order: 2;
-                flex: unset;
+                // border: var(--border);
+                flex: 1;
+                display: grid;
+                align-items: center;
+            }
 
-                ul {
-                    li {
-                        &.close_nav {
-                            display: block;
+            .extra_links {
+                display: flex;
+                gap: 10px;
+
+                .search {
+                    // border: var(--border);
+
+                    a {
+                        padding-top: 6px;
+                        color: var(--white);
+                    }
+                }
+
+                .nav_control {
+                    // border: var(--border);
+                    display: grid;
+                    align-items: center;
+                    display: none;
+
+                    a {
+                        line-height: 10px;
+
+                        span {
+                            color: var(--white);
+
+                        }
+
+                        &:hover {
+                            background-color: var(--brand_deep);
+                            color: var(--white);
+                            border-radius: 4px;
+                            padding: 5px 10px;
                         }
                     }
                 }
             }
 
-            .extra_links {
-                order: 1;
+            @include custom_media(0px, 991.9px) {
+                justify-content: flex-end;
 
-                .nav_control {
-                    display: grid;
+                .nav {
+                    order: 2;
+                    flex: unset;
+
+                    ul {
+                        li {
+                            &.close_nav {
+                                display: block;
+
+                            }
+                        }
+                    }
+                }
+
+                .extra_links {
+                    order: 1;
+
+                    .nav_control {
+                        display: grid;
+                    }
                 }
             }
         }
