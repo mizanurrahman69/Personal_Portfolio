@@ -3,7 +3,7 @@ nav {
         margin-bottom: 0;
         padding: 0;
         display: flex;
-        gap: 80px;
+        gap: 55px;
         justify-content: center;
 
         li {
@@ -24,63 +24,62 @@ nav {
             }
 
             a {
-                color: var(--white);
                 text-transform: uppercase;
                 font-weight: 400;
-                font-family: var(--poppin_regular);
-
+                font-family: var(--Poppins);
+                color: var(--white);
+                padding: 5px 10px;
                 &.active,
                 &:hover {
                     font-weight: 700;
-                    background-color: var(--brand_deep);
+                    background-color: rgba(208, 255, 0, 0.648);
                     color: var(--white);
                     border-radius: 4px;
-                    padding: 5px 10px;
-                    transition-duration: 0.3s;
+
                 }
             }
         }
     }
+}
 
-    @include custom-media(0px, 999.9px) {
-        nav {
-            position: relative;
+@include custom-media(0px, 999.9px) {
+    nav {
+        position: relative;
 
-            ul {
-                display: none;
-                height: 100vh;
-                position: fixed;
-                flex-direction: column;
-                gap: 10px;
-                width: 30vw;
-                min-width: 150px;
-                top: 0;
-                padding: 30px 0px;
-                right: 0;
-                justify-content: flex-start;
-                text-align: left;
-                padding-left: 30px;
-                backdrop-filter: blur(5px);
-                box-shadow: 0px 0px 10px black;
-                background-color: #0000000d;
-                z-index: 9;
-                background-color: #05546d36;
-
-                &.active {
-                    display: block;
-                }
-
-                li {
-                    // border: var(--border);
-                    list-style-type: disc;
-                    margin-bottom: 30px;
-                }
-
-                a {
-                    font-size: 17px;
-                }
+        ul {
+            display: none;
+            height: 100vh;
+            position: fixed;
+            flex-direction: column;
+            gap: 10px;
+            width: 30vw;
+            min-width: 150px;
+            top: 0;
+            padding: 30px 0px;
+            right: 0;
+            justify-content: flex-start;
+            text-align: left;
+            padding-left: 30px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0px 0px 10px black;
+            background-color: var(--white);
+            z-index: 9;
+            background-color: #271da1a3;
+            &.active {
+                display: block;
             }
 
+            li {
+                // border: var(--border);
+                list-style-type: disc;
+                margin-bottom: 30px;
+            }
+
+            a {
+                font-size: 17px;
+                color: var(--black);
+            }
         }
+
     }
 }
