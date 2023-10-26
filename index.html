@@ -4,10 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mizanur Rahman</title>
     <link rel="stylesheet" href="./assets/styles/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:ital@1&family=Poppins:ital,wght@0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -15,7 +21,7 @@
         <div class="container">
             <div class="header_body">
                 <div class="logo">
-                    <p>mr</p>
+                   <p>mr</p>
                 </div>
                 <div class="right_content">
                     <nav class="nav">
@@ -27,22 +33,25 @@
                                     </span>
                                 </a>
                             </li>
-                            <li><a href="">HOME</a></li>
-                            <li><a href="">about</a></li>
-                            <li><a href="">gallary</a></li>
-                            <li><a href="">contact</a></li>
+                            <li><a class="#">HOME</a></li>
+                            <li><a class="#">ABOUT</a></li>
+                            <li><a class="#">SEVICES</a></li>
+                            <li><a class="#">GALLARY</a></li>
+                            <li><a class="#">CONTACT</a></li>
                         </ul>
                     </nav>
                     <div class="extra_links">
                         <div class="search">
-                            <a href=""><span class="material-symbols-outlined fill">
+                            <a href="#" onclick="event.preventDefault();">
+                                <span class="material-symbols-outlined fill">
                                     search
-                                </span></a>
+                                </span>
+                            </a>   
                         </div>
                         <div class="nav_control">
-                            <a href="">
+                            <a href="#" onclick="event.preventDefault(); nav_list.classList.add('active');">
                                 <span class="material-symbols-outlined fill">
-                                    density_large
+                                    format_align_right
                                 </span>
                             </a>
                         </div>
@@ -52,7 +61,41 @@
         </div>
     </header>
     <main>
-        
+        <div class="banner">
+            <div class="container">
+                <div class="banner_content">
+                    <div class="left">
+                        <div class="common_heading">
+                            <p>
+                                hello,im
+                            </p>
+                            <h1>
+                                mizanur rahman
+                            </h1>
+                            <p>
+                                A passionate Web Developer from bangladesh!
+                            </p>
+                        </div>
+                        <div class="links">
+                            <div class="button">
+                                <p>contact me</p>
+                            </div>
+                            <ul id="social">
+                                <li><a href=""></a><i class="fa-brands fa-square-facebook"></i></li>
+                                <li><a href=""></a><i class="fa-brands fa-square-twitter"></i></li>
+                                <li><a href=""></a><i class="fa-brands fa-square-instagram"></i></li>
+                                <li><a href=""></a><i class="fa-brands fa-square-whatsapp"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="img">
+                            <img src="./assets/images/banner-images/banner-img.jpg.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 
