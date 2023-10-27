@@ -83,23 +83,53 @@ h3 {
 :root {
   --border: 1px solid red;
   --black: rgb(0, 0, 0);
-  --white:#fff;
+  --red: red;
+  --white: #fff;
   --brand_light: #0F6E8C;
   --brand_deep: #05546D;
   --black_light: #2d2f30;
   --black_deep: #242eba;
   --white: #fff;
-  --sans-serif: "Inter", sans-serif;
-  --play_fair: "Playfair Display", serif;
-  --Jakarta_Sans: "Plus Jakarta Sans", sans-serif;
-  --poppin_regular: "Poppins", sans-serif;
+  --sans_sarif: "Inter", sans-serif;
+  --Playfair: "Playfair Display", serif;
+  --Plus_Jakarta_Sans: "Plus Jakarta Sans", sans-serif;
+  --Poppins: "Poppins", sans-serif;
 }
 
 .container {
   width: 1400px;
-  border: var(--border);
   margin: auto;
   padding: 0px 15px;
+}
+@media (min-width: 0px) and (max-width: 575.9px) {
+  .container {
+    width: calc(100% - 30px);
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .container {
+    width: 546px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.9px) {
+  .container {
+    width: 738px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.9px) {
+  .container {
+    width: 962px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.9px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
 }
 
 .header_body {
@@ -179,7 +209,7 @@ nav ul {
   margin-bottom: 0;
   padding: 0;
   display: flex;
-  gap: 80px;
+  gap: 55px;
   justify-content: center;
 }
 nav ul li {
@@ -196,24 +226,24 @@ nav ul li.close_nav a span {
   font-size: 35px;
 }
 nav ul li a {
-  color: var(--white);
   text-transform: uppercase;
   font-weight: 400;
-  font-family: var(--poppin_regular);
+  font-family: var(--Poppins);
+  color: var(--white);
+  padding: 5px 10px;
 }
 nav ul li a.active, nav ul li a:hover {
   font-weight: 700;
-  background-color: var(--brand_deep);
+  background-color: rgba(208, 255, 0, 0.648);
   color: var(--white);
   border-radius: 4px;
-  padding: 5px 10px;
-  transition-duration: 0.3s;
 }
+
 @media (min-width: 0px) and (max-width: 999.9px) {
-  nav nav {
+  nav {
     position: relative;
   }
-  nav nav ul {
+  nav ul {
     display: none;
     height: 100vh;
     position: fixed;
@@ -229,19 +259,20 @@ nav ul li a.active, nav ul li a:hover {
     padding-left: 30px;
     backdrop-filter: blur(5px);
     box-shadow: 0px 0px 10px black;
-    background-color: rgba(0, 0, 0, 0.0509803922);
+    background-color: var(--white);
     z-index: 9;
-    background-color: rgba(5, 84, 109, 0.2117647059);
+    background-color: rgba(39, 29, 161, 0.6392156863);
   }
-  nav nav ul.active {
+  nav ul.active {
     display: block;
   }
-  nav nav ul li {
+  nav ul li {
     list-style-type: disc;
     margin-bottom: 30px;
   }
-  nav nav ul a {
+  nav ul a {
     font-size: 17px;
+    color: var(--black);
   }
 }
 
