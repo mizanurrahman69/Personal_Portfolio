@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en b">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/styles/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
@@ -27,22 +28,27 @@
                                     </span>
                                 </a>
                             </li>
-                            <li><a href="">HOME</a></li>
-                            <li><a href="">about</a></li>
-                            <li><a href="">gallary</a></li>
-                            <li><a href="">contact</a></li>
+                            <li><a class="#">HOME</a></li>
+                            <li><a class="#">ABOUT</a></li>
+                            <li><a class="#">portfolio</a></li>
+                            <li><a class="#">services</a></li>
+                            <li><a class="#">testimonial</a></li>
+                            <li><a class="#">blog</a></li>
+                            <li><a class="#">CONTACT</a></li>
                         </ul>
                     </nav>
                     <div class="extra_links">
                         <div class="search">
-                            <a href=""><span class="material-symbols-outlined fill">
+                            <a href="#" onclick="event.preventDefault();">
+                                <span class="material-symbols-outlined fill">
                                     search
-                                </span></a>
+                                </span>
+                            </a>
                         </div>
                         <div class="nav_control">
-                            <a href="">
+                            <a href="#" onclick="event.preventDefault(); nav_list.classList.add('active');">
                                 <span class="material-symbols-outlined fill">
-                                    density_large
+                                    format_align_right
                                 </span>
                             </a>
                         </div>
@@ -52,7 +58,42 @@
         </div>
     </header>
     <main>
-        
+        <div class="banner">
+            <div class="container">
+                <div class="banner_content">
+<!-- <img src="./assets/images/hero-bg.jpg" alt=""> -->
+                    <div class="left">
+                        <div class="common_heading">
+                            <p>
+                                hello,im
+                            </p>
+                            <h2>
+                                mizanur rahman
+                            </h2>
+                            <p>
+                                A passionate Web Developer from bangladesh!
+                            </p>
+                        </div>
+                        <div class="links">
+                            <div class="button">
+                              <a href="">contact me</a>
+                            </div>
+                            <ul id="social">
+                                <li><a href="facebook"></a><i class="fa-brands fa-facebook"></i></li>
+                                <li><a href="twitter"></a><i class="fa-brands fa-square-twitter"></i></li>
+                                <li><a href="instagram"></a><i class="fa-brands fa-square-instagram"></i></li>
+                                <li><a href="whatsapp"></a><i class="fa-brands fa-square-whatsapp"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="img">
+                            <img src="./assets/images/banner-images/banner_images.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 
