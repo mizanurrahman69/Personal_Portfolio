@@ -88,7 +88,7 @@ h3 {
   --brand_light: #0F6E8C;
   --brand_deep: #05546D;
   --black_light: #2d2f30;
-  --black_deep: #242eba;
+  --brand_deep: #fd562a;
   --white: #fff;
   --sans_sarif: "Inter", sans-serif;
   --Playfair: "Playfair Display", serif;
@@ -160,10 +160,10 @@ header .header_body {
   padding: 25px 0px;
 }
 header .header_body .logo {
-  border: 3px solid red;
+  border: 3px solid #fd562a;
   width: 70px;
   height: 70px;
-  background-color: rgba(255, 0, 0, 0.568);
+  background-color: var(--brand_deep);
   border-radius: 50%;
 }
 header .header_body .logo p {
@@ -172,8 +172,8 @@ header .header_body .logo p {
   text-transform: uppercase;
   font-family: var(--Poppins);
   position: relative;
-  top: 13px;
-  left: 14px;
+  top: 14px;
+  left: 16px;
 }
 header .header_body .right_content {
   flex: 1;
@@ -204,10 +204,11 @@ header .header_body .right_content .extra_links .nav_control a span {
   color: var(--white);
 }
 header .header_body .right_content .extra_links .nav_control a:hover {
-  background-color: #fd562a;
+  font-weight: 700;
   color: var(--white);
   border-radius: 4px;
-  padding: 5px 10px;
+  color: var(--brand_deep);
+  transition-duration: 0.5s;
 }
 @media (min-width: 0px) and (max-width: 991.9px) {
   header .header_body .right_content {
@@ -257,9 +258,8 @@ nav ul li a {
 }
 nav ul li a.active, nav ul li a:hover {
   font-weight: 700;
-  color: var(--white);
   border-radius: 4px;
-  color: #dc3545;
+  color: var(--brand_deep);
   transition-duration: 0.5s;
 }
 
