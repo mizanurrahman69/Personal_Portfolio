@@ -28,14 +28,12 @@ nav {
                 text-transform: uppercase;
                 font-weight: 400;
                 font-family: var(--Poppins);
-                
 
                 &.active,
                 &:hover {
                     font-weight: 700;
-                    color: var(--white);
                     border-radius: 4px;
-                   color: #dc3545;
+                   color: var(--brand_deep);
                    transition-duration: 0.5s;
                 }
             }
@@ -66,7 +64,6 @@ nav {
             background-color: #0000000d;
             z-index: 9;
             background-color: #00b2e9ca;
-
             &.active {
                 display: block;
             }
@@ -81,6 +78,5 @@ nav {
                 font-size: 17px;
             }
         }
-
     }
 }
