@@ -1,7 +1,7 @@
 header {
     // border: var(--border);
-    background-image: url(../assets/images/hero-bg.jpg);
-
+    // background-image: url(../assets/images/hero-bg.jpg);
+    background-color: var(--black);
     .header_body {
         display: flex;
         flex-wrap: wrap;
@@ -10,21 +10,17 @@ header {
         padding: 25px 0px;
 
         .logo {
-            border: 3px solid #fd562a;
-            width: 70px;
-            height: 70px;
-            background-color: var(--brand_deep);
+            height: 50px;
+    width: 50px;
+         .images{
+            height: 100%;
+            width: 100%;
+            border: 1px solid var(--white);
             border-radius: 50%;
-
-            p {
-                color: white;
-                font-weight: 700;
-                text-transform: uppercase;
-                font-family: var(--Poppins);
-                position: relative;
-                top: 14px;
-                left: 16px;
+            img{
+                width: 100%;
             }
+         }
         }
 
         .right_content {
@@ -54,13 +50,17 @@ header {
 
                 .nav_control {
                     // border: var(--border);
-                    // display: grid; 
+                    display: grid; 
                     align-items: center;
                     display: none;
-
+                    border: 1px solid #8b7c7c;
+                    width: 30px;
+                    height: 30px;
+                    // align-items: center;
+                    text-align: center;
                     a {
                         line-height: 10px;
-
+                       
                         span {
                             color: var(--white);
                         }
