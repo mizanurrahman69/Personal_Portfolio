@@ -2,6 +2,7 @@ header {
     // border: var(--border);
     // background-image: url(../assets/images/hero-bg.jpg);
     background-color: var(--black);
+
     .header_body {
         display: flex;
         flex-wrap: wrap;
@@ -11,16 +12,18 @@ header {
 
         .logo {
             height: 50px;
-    width: 50px;
-         .images{
-            height: 100%;
-            width: 100%;
-            border: 1px solid var(--white);
-            border-radius: 50%;
-            img{
+            width: 50px;
+
+            .images {
+                height: 100%;
                 width: 100%;
+                border: 1px solid var(--white);
+                border-radius: 50%;
+
+                img {
+                    width: 100%;
+                }
             }
-         }
         }
 
         .right_content {
@@ -50,7 +53,7 @@ header {
 
                 .nav_control {
                     // border: var(--border);
-                    display: grid; 
+                    display: grid;
                     align-items: center;
                     display: none;
                     border: 1px solid #8b7c7c;
@@ -58,9 +61,10 @@ header {
                     height: 30px;
                     // align-items: center;
                     text-align: center;
+
                     a {
                         line-height: 10px;
-                       
+
                         span {
                             color: var(--white);
                         }
@@ -69,8 +73,8 @@ header {
                             font-weight: 700;
                             color: var(--white);
                             border-radius: 4px;
-                           color: var(--brand_deep);
-                           transition-duration: 0.5s;
+                            color: var(--brand_deep);
+                            transition-duration: 0.5s;
                         }
                     }
                 }
