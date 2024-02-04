@@ -1,0 +1,95 @@
+#testimonial_section {
+    background-image: url(../images/testimonial_bg/testimonial-bg.jpg);
+
+    .testimonial_tittle {
+        padding-top: 50px;
+
+        h2 {
+            color: var(--white);
+        }
+    }
+
+    .client_testimonial {
+
+        .testimonial_list {
+            max-width: 456px;
+            max-height: 350px;
+            background: #fff;
+            padding: 38px 33px 26px;
+            position: relative;
+            margin-top: 36px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(176, 18, 6, 0.1);
+            margin-bottom: 80px;
+
+            .comment {
+                margin-bottom: 15px
+            }
+
+            .guote_authot {
+                gap: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .img {
+                    width: 60px;
+                    height: 60px;
+
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        border-radius: 50%;
+                    }
+                }
+
+                .author {
+                    .name {
+                        font-weight: 600;
+                        font-size: 21px;
+                        line-height: 30px;
+                    }
+
+                    .category {
+                        margin-top: 8px;
+                        font-size: 16px;
+                        color: #948daa;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 5px;
+
+        .left {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            background: white;
+            border-radius: 50%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

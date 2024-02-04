@@ -1,0 +1,136 @@
+#about_section {
+    background-color: var(--white_deep);
+
+    .element_img {
+        // border: var(--border);
+        height: 80px;
+        width: 80px;
+        position: relative;
+        right: 50%;
+        animation: top_to_bottom 3s linear infinite;
+
+        img {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    }
+
+    @keyframes top_to_bottom {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(30px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .about_content {
+        gap: 90px;
+        padding: 150px 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+        @include lg() {
+            gap: 0;
+        }
+
+        @include custom_media(0px, 991.9px) {
+            grid-template-columns: 1fr;
+        }
+
+        .left {
+            @include lg() {
+                margin-top: 100px;
+            }
+
+            .img {
+                overflow-x: hidden;
+
+                img {
+                    border-radius: 20px;
+
+                    @include lg() {
+                        width: 400px;
+                        height: 472px;
+                    }
+
+                }
+            }
+        }
+
+        .right {
+            .common_heading {
+                margin-bottom: 20px;
+
+                p {}
+
+                h2 {
+                    font-weight: 700;
+                    margin-bottom: 40px;
+                }
+
+            }
+
+            .about {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+
+                .about_left {
+                    ul {
+                        li {
+                            margin-top: 20px;
+
+                            h4 {
+                                font-family: var(--poppins);
+                                font-size: 16px;
+                                margin-bottom: 4px;
+                                text-transform: uppercase;
+                                color: #222;
+                                font-weight: 800;
+                                line-height: 1.2;
+                                font-family: 'Poppins', sans-serif;
+                            }
+
+                            p {
+                                text-transform: capitalize;
+                                margin-bottom: 0;
+                                margin-top: 0;
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 18px;
+                                color: #615978;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .CV {
+                margin-top: 30px;
+                padding: 15px 42px;
+                background: var(--brand);
+                border-radius: 5px;
+                text-transform: uppercase;
+                border: 0;
+                transition-duration: .3s;
+
+                a {
+                    color: var(--white);
+                    text-align: center;
+                }
+
+                &:hover {
+                    background-color: #cf5432;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.feature_section {
+    display: flex;
+    gap: 100px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+
+    @include custom_media(0px, 1199.9px) {
+        display: grid;
+        gap: 100px;
+        justify-content: center;
+    }
+
+    .left {
+        .img{
+            
+
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .right {
+        width: 50%;
+        @include custom_media(0px, 1199.9px) {
+            width: unset;
+        }
+        h2 {
+            margin-bottom: 30px;
+            font-weight: 600;
+            font-size: 48px;
+
+            span {
+                display: block;
+                font-size: 18px;
+                line-height: 28px;
+                color: var(--brand_deep);
+            }
+        }
+
+        p {
+            color: var(--gray);
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 25px;
+        }
+
+        .feature_list {
+            li {
+                display: flex;
+                align-items: start;
+                margin-bottom: 20px;
+
+                .icon {
+                    margin-bottom: 30px;
+                    margin-right: 20px;
+
+                    .icon_box {
+                        width: 60px;
+                        height: 60px;
+                        background: #fd562a;
+                        color: #fff;
+                        font-size: 24px;
+                        text-align: center;
+                        border-radius: 50%;
+                        line-height: 60px;
+                        position: relative;
+                    }
+
+                    span {
+                        font-size: 24px;
+                        position: absolute;
+                        top: 18px;
+                        right: 18px;
+                    }
+                }
+
+                .content {
+                    h4 {
+                        margin-bottom: 15px;
+                        font-size: 21px;
+                        font-weight: 600;
+                        line-height: 1.2rem;
+                    }
+
+                    p {
+                        color: var(--gray);
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+}

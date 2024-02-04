@@ -1,0 +1,44 @@
+#portfolio_section {
+    .portfolio_section_content {
+        padding: 100px 0px;
+
+        .skill {
+            margin-bottom: 48px;
+
+            ul {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+
+                li {
+                    border: 1px solid #e0e0e0;
+                    padding: 6px 12px;
+                    border-radius: 4px;
+
+                    &:hover {
+                        border: 1px solid var(--red);
+                    }
+
+                    a {
+                        font-size: 16px;
+                        line-height: 18px;
+
+                    }
+                }
+            }
+        }
+
+        .images_part {
+            // border: var(--border);b 
+            gap: 20px;
+            display: flex;
+ 
+            .images_items {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+        }
+    }
+}

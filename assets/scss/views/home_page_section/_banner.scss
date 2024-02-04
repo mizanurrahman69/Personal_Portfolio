@@ -1,5 +1,7 @@
 #banner {
-    background-color: var(--black);
+    // background-color: var(--black);
+    background-image: url(../images/background-images/1.jpg);
+    background-size: cover;
 
     .banner_content {
         color: var(--white);
@@ -30,7 +32,7 @@
         .left {
 
             // border: var(--border);
-        
+
             @include custom_media(0px, 991.9px) {
                 text-align: center;
             }
@@ -41,6 +43,7 @@
                 h2 {
                     font-size: 90px;
                     line-height: 120px;
+                    text-transform: uppercase;
 
                     @include custom_media(0px, 991.9px) {
                         font-size: 38px;
@@ -142,6 +145,7 @@
                 width: 100%;
 
                 img {
+                    // filter: blur(1px);
                     height: 100%;
                     // border: var(--border);
                     border-radius: 20%;
@@ -151,4 +155,159 @@
             }
         }
     }
+
+    .element_img {
+        position: relative;
+        // border: var(--border);
+        height: 200px;
+
+        .element_img_1 {
+            // border: var(--border);
+            height: 80px;
+            width: 80px;
+            animation: left_to_right 5s linear infinite;
+            position: absolute;
+            left: 10%;
+            top: -740px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        @keyframes left_to_right {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(30px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .element_img_2 {
+            // border: var(--border);
+            height: 80px;
+            width: 80px;
+            animation: left_to_right 5s linear infinite;
+            position: absolute;
+            left: 80%;
+            top: -740px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        @keyframes left_to_right {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(30px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .element_img_3 {
+            // border: var(--border);
+            height: 80px;
+            width: 80px;
+            animation: left_to_right 5s linear infinite;
+            position: absolute;
+            left: 10%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        @keyframes left_to_right {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(30px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .element_img_4 {
+            // border: var(--border);
+            height: 80px;
+            width: 80px;
+            animation: left_to_right 5s linear infinite;
+            position: absolute;
+
+            left: 80%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        @keyframes left_to_right {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(30px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .element_img_5 {
+            // border: var(--border);
+            height: 80px;
+            width: 80px;
+            animation: left_to_right 5s linear infinite;
+            position: absolute;
+            right: 50%;
+            bottom: 500px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        @keyframes left_to_right {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(30px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @include custom_media(0px, 991.9px) {
+            display: none;
+        }
+    }
+
 }

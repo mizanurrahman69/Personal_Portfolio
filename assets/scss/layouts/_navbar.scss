@@ -27,16 +27,32 @@ nav {
                 color: var(--white);
                 text-transform: uppercase;
                 font-weight: 400;
-                font-family: var(--Poppins);
+                transition-duration: .3s;
+                font-style: 18px;
+                position: relative;
 
-                &.active,
-                &:hover {
-                    font-weight: 700;
-                    border-radius: 4px;
-                   color: var(--brand_deep);
-                   transition-duration: 0.5s;
+                &::after {
+                    content: "";
+                    height: 5px;
+                    width: 0;
+                    position: absolute;
+                    bottom: -16px;
+                    background: var(--brand);
+                    left: -10px;
+                    background-position: center center;
+                    transition-duration: 0.3s;
                 }
+
+                &:hover {
+                    // color: var(--brand);
+
+                    &::after {
+                        width: calc(100% + 20px);
+                    }
+                }
+
             }
+
         }
     }
 }
@@ -64,6 +80,7 @@ nav {
             background-color: #0000000d;
             z-index: 9;
             background-color: #00b2e9ca;
+
             &.active {
                 display: block;
             }

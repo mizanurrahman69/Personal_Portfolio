@@ -1,0 +1,93 @@
+#Blog_section {
+    border: var(--border);
+
+    .blog_tittle {
+        padding-top: 120px;
+    }
+
+    .blog_content {
+        padding-bottom: 36px;
+        display: flex;
+        gap: 20px;
+
+        .left {
+            position: relative;
+
+            .post_content {
+                position: absolute;
+                z-index: 1;
+                left: 48px;
+                bottom: 48px;
+                right: 48px;
+
+                .post_meta {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 15px;
+                    margin-bottom: 6px;
+
+                    .post_date {
+                        color: var(--white);
+                        font-size: 12px;
+                    }
+
+                    .post_cat {
+                        a {
+                            display: flex;
+                            gap: 5px;
+                            align-items: center;
+                            color: var(--white);
+                            font-size: 12px;
+                            &:hover {
+                                color: var(--brand);
+                            }
+                            i {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+
+                h3 {
+                    color: var(--white);
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-weight: 600;
+
+                    a {
+                        color: white;
+                        transition: 0.3s;
+
+                        &:hover {
+                            color: var(--brand);
+                        }
+
+                    }
+                }
+            }
+
+            .img {
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    filter: brightness(0.7);
+                    transition-duration: 0.3s;
+
+                    &:hover {
+                        filter: brightness(0.6);
+                    }
+                }
+            }
+        }
+
+        .right {
+            border: var(--border);
+            width: 100%;
+        }
+    }
+}

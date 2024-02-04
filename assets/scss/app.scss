@@ -2,7 +2,6 @@
 @import "./vendors/veriables";
 @import "./mixin/media.scss";
 
-
 @import "./components/button";
 @import "./components/common_heading";
 
@@ -16,4 +15,9 @@
 @import "./views/home";
 @import "./views/home_page_section/banner";
 @import "./views/home_page_section/intro";
-
+@import "./views/home_page_section/skill.scss";
+@import "./views/home_page_section/portfolio";
+@import "./views/home_page_section/service_section";
+@import "./views/home_page_section/feature";
+@import "./views/home_page_section/testimonial";
+@import "./views/home_page_section/blog";
