@@ -48,7 +48,7 @@
                 font-family: var(--Poppins);
                 height: 100%;
                 width: 100%;
-
+z-index: 99;
                 h2 {}
 
                 p {
@@ -72,8 +72,11 @@
                 left: 0;
                 width: 431px;
 
-                :hover {
-                    transform: rotateZ(11deg);
+                &:hover {
+                    background-color: black;
+                    border: 1px solid var(--red);
+                    transform: rotate(7deg);
+                    
                 }
             }
         }

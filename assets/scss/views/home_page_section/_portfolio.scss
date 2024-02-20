@@ -1,4 +1,18 @@
 #portfolio_section {
+    // width: 100vw;
+    // position: fixed;
+    // opacity: 0;
+    // visibility: hidden;
+    // top: 103px;
+    // transition-duration: .3s;
+    // transform: scale(0);
+    &.active {
+        // display: block;
+        // opacity: 1;
+        // visibility: visible;
+        // transform: scale(1);
+        // z-index: 99;
+    }
     .portfolio_section_content {
         padding: 100px 0px;
 
