@@ -143,14 +143,17 @@
 
             .img {
                 width: 100%;
-
                 img {
                     // filter: blur(1px);
                     height: 100%;
                     // border: var(--border);
-                    border-radius: 20%;
+                    border-radius: 50px;
                     background-color: rgb(0, 125, 234);
                     box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
+
+                    &:hover {
+                        border-color: black;
+                    }
                 }
             }
         }

@@ -1,36 +1,51 @@
-// .common_heading {
-//     font-family: var(--Poppins);
-
-//     h2 {
-
-//         font-size: 48px;
-//         line-height: 58px;
-//         letter-spacing: 0.320px;
-//         text-transform: capitalize;
-//     }
-
-//     p {
-//         color: var(--gray);
-//         font-size: 20px;
-//         line-height: 40px;
-//         font-style: normal;
-//         letter-spacing: 0.5px;
-//         text-transform: capitalize;
-//     }
-// }
 .tittle {
+    ::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border: 8px solid transparent;
+        border-bottom-color: #fd562a;
+        position: absolute;
+        top: 2.5px;
+        border-right-color: #fd562a;
+        left: -30px;
+
+        @include custom_media(0px, 400px) {
+            display: none;
+        }
+    }
+
+    ::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border: 8px solid transparent;
+        border-bottom-color: #fd562a;
+        position: absolute;
+        top: 2.5px;
+        border-left-color: #fd562a;
+        left: -30px;
+
+        @include custom_media(0px, 400px) {
+            display: none;
+        }
+    }
+
+
     // border: var(--border);
     width: 50%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 
     h2 {
         font-size: 24px;
         line-height: 1;
         font-weight: bold;
         margin-bottom: 24px;
+        position: relative;
+        display: inline-block;
     }
 
     p {
