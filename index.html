@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO META -->
     <link rel="shortcut icon" type="image/x-icon" href="./assets/images/mokup-images/mokup.jpg.jpg">
@@ -60,35 +59,10 @@
     <link rel="stylesheet" href="./assets/js/pluggins/owl_carousel/owl.theme.default.min.css">
     <script src="./assets/js/pluggins/owl_carousel/owl.carousel.min.js"></script>
 
+
     <link rel="stylesheet" href="./assets/styles/app.css">
     <script src="./assets/js/app.js" defer></script>
 </head>
-
-
-
-<!-- <div
-    x-data="{
-        search: '',
- 
-        items: ['foo', 'bar', 'baz'],
- 
-        get filteredItems() {
-            return this.items.filter(
-                i => i.startsWith(this.search)
-            )
-        }
-    }"
->
-    <input x-model="search" placeholder="Search...">
- 
-    <ul>
-        <template x-for="item in filteredItems" :key="item">
-            <li x-text="item"></li>
-        </template>
-    </ul>
-</div> -->
-
-<!-- <a href="./assets/images/background-images/1.jpg" download="">sfjgirhf</a> -->
 
 <body>
     <header>
@@ -120,7 +94,7 @@
                             <li><a class="#">CONTACT</a></li>
                         </ul>
                     </nav>
-                    <!-- <div class="extra_links">
+                    <div class="extra_links">
                         <div class="search">
                             <a href="#" onclick="event.preventDefault();">
                                 <span class="material-symbols-outlined fill">
@@ -135,35 +109,8 @@
                                 </span>
                             </a>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
-
-                <!-- extra_slidebar_practice -->
-
-                <!-- <div id="mySidebar" class="sidebar">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
-                </div>
-
-                <div id="main">
-                    <button class="openbtn" onclick="openNav()">☰</button>
-                </div>
-
-                <script>
-                    function openNav() {
-                        document.getElementById("mySidebar").style.width = "250px";
-                        document.getElementById("main").style.marginleft = "250px";
-                    }
-
-                    function closeNav() {
-                        document.getElementById("mySidebar").style.width = "0";
-                        document.getElementById("main").style.marginLeft = "0";
-                    }
-                </script> -->
-                <!-- extra_slidebar_practice -->
             </div>
         </div>
     </header>
@@ -198,7 +145,8 @@
                         </div>
                     </div>
                     <div class="right">
-                        <div class="img">
+                        <div class="img" data-tilt="" data-tilt-max="10"
+                            style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
                             <img src="./assets/images/banner-images/banner_images.png" alt="">
                         </div>
                     </div>
@@ -236,10 +184,8 @@
         <section id="intro">
             <div class="container">
                 <div class="intro_section">
-                    <div class="common_heading">
-                        <h2>
-                            WELCOME TO MY WORLD
-                        </h2>
+                    <div class="tittle">
+                        <h2> WELCOME TO MY WORLD</h2>
                         <p>
                             I'm a young tech enthasist and entrepreneur
                             who love to take risk.
@@ -254,7 +200,6 @@
                                 nulla pari erunt mollit anim id
                                 est laborum.</p>
                         </div>
-                        <div class="css"></div>
                         <div class="item1">
                             <h2>Dedication</h2>
                             <p>Beaboris nisi ut aliquip ex ea commodo consen cillum dolore eu fugiat nulla pariatur.</p>
@@ -629,19 +574,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="navigation">
+                <!-- <div class="navigation">
                     <div class="right testimonial_slide_prev">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </div>
                     <div class="left testimonial_slide_next">
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </section>
-        <!-- Testimonial_part_ewnd -->
+        <!-- Testimonial_part_end -->
 
+        <!-- Blog_section_part_part -->
         <section id="Blog_section">
             <div class="container">
                 <div class="tittle blog_tittle">
@@ -678,7 +624,7 @@
                         </div>
                     </div>
                     <div class="right">
-                        <div class="group_post">
+                        <div class="group_post" id="">
                             <div class="content">
                                 <div class="post_content">
                                     <ul class="post_meta">
@@ -771,102 +717,178 @@
                     </div>
                 </div>
         </section>
+        <!-- Blog_section_end -->
 
-        <!-- <div class="owl-carousel owl-theme">
-            <div class="item" style="background-color: black; width: 20px; border-radius: 50%;">
-                <h4>1</h4>
-            </div>
-            <div class="item">
-                <h4>2</h4>
-            </div>
-            <div class="item">
-                <h4>3</h4>
-            </div>
-            <div class="item">
-                <h4>4</h4>
-            </div>
-            <div class="item">
-                <h4>5</h4>
-            </div>
-            <div class="item">
-                <h4>6</h4>
-            </div>
-            <div class="item">
-                <h4>7</h4>
-            </div>
-            <div class="item">
-                <h4>8</h4>
-            </div>
-            <div class="item">
-                <h4>9</h4>
-            </div>
-            <div class="item">
-                <h4>10</h4>
-            </div>
-            <div class="item">
-                <h4>11</h4>
-            </div>
-            <div class="item">
-                <h4>12</h4>
+        <!-- partner_section_part_start -->
+        <section id="partner_section">
+            <div class="container">
+                <div class="brand_list">
+                    <div class="brand_logos brand_slide owl-carousel">
+                        <div class="img">
+                            <img src="./assets/images/partner_img/partner1.jpg" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="./assets/images/partner_img/partner6.jpg" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="./assets/images/partner_img/partner1.jpg" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="./assets/images/partner_img/partner6.jpg" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="./assets/images/partner_img/partner1.jpg" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="./assets/images/partner_img/partner6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- partner_section_part_end -->
+
+        <!-- contact_section_start -->
+        <div class="contact_section">
+            <div class="container">
+                <div class="tittle blog_tittle">
+                    <h2>GET IN TOUCH</h2>
+                    <p>
+                        Duis aute irure dolor in reprehen pteur sint
+                        occaecat cupidatat non proident, sunt in culim
+                        id est.
+                    </p>
+                </div>
+                <div class="address">
+                    <ul class="address_section">
+                        <li class="content">
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="location">
+                                <h4>Address</h4>
+                                <p>Bardeshi, Amin Bazar, New York</p>
+                            </div>
+                        </li>
+                        <li class="content">
+                            <div class="icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="location">
+                                <h4>Phone</h4>
+                                <p>+01234 567 890</p>
+                            </div>
+                        </li>
+                        <li class="content">
+                            <div class="icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="location">
+                                <h4>Email</h4>
+                                <p>hello@poriweb.com</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom">
+
+                    <div class="map" id="map"></div>
+
+                    <script src="script.js"></script>
+
+                    <div class="form">
+                        <h2>Write me a message*</h2>
+                        <div class="info">
+                            <div class="col_a">
+                                <input type="text" placeholder="Name*">
+                            </div>
+                            <div class="col_a">
+                                <input type="text" placeholder="Email*">
+                            </div>
+                        </div>
+
+                        <div class="text">
+                            <textarea name="" id="inputmessage" cols="80" rows="15"
+                                placeholder="your message here"></textarea>
+                        </div>
+                        <button type="submit" class="CV">
+                            <a href="cv">
+                                <p>SEND MESSAGE</p>
+                            </a>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- contact_section_end -->
+
+        <!-- footer_part_start -->
+        <footer class="footer_section" id="section_footer">
+            <div class="container">
+                <div class="footer_content">
+                    <div class="content">
+                        <a href="footer_logo">
+                            <img src="./assets/images/footer_img/footer_img.jpg" alt="">
+                        </a>
+                        <p>Kilaboris nisi ut aliquip ex ea commodo consequat uis
+                            aute cupidatat non proident sunt in culd
+                            est laborum.</p>
+                            <div class="social_link">
+                                <ul>
+                                    <li><a href="facebook"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="twitter"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="linkedin"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="youtube"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="instagram"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                    </div>
+                   
+                    <div class="bottom">
+                        <div class="Terms_Condition">
+                            <p>All rights reserved © 2023 eThemeStudio</p>
+                            <a href=""></a>
+                        </div>
+                        <div class="Terms_Condition">
+                            <a href="">
+                                <p>Terms & Condition Privacy Policy</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <!-- footer_part_End -->
+
         <script>
-            $('.owl-carousel').owlCarousel({
+            $(".brand_slide").owlCarousel({
+                items: 8,
+                margin: 30,
                 loop: true,
-                margin: 10,
-                nav: true,
+                autoplay: true,
+                autoplayhoverfalse: true,
+                dosts: true,
+                nav: false,
+
+
                 responsive: {
                     0: {
-                        items: 1
+                        items: 3,
                     },
-                    600: {
-                        items: 3
+                    // breakpoint from 480 up
+                    480: {
+                        items: 6,
                     },
-                    1000: {
-                        items: 5
-                    }
-                }
-            })
-        </script> -->
+                    // breakpoint from 768 up
+                    768: {
 
-        <!-- <div class="owl-carousel owl-theme">
-            <div class="item">
-                <h4>1</h4>
-            </div>
-            <div class="item">
-                <h4>2</h4>
-            </div>
-            <div class="item">
-                <h4>3</h4>
-            </div>
-            <div class="item">
-                <h4>4</h4>
-            </div>
-            <div class="item">
-                <h4>5</h4>
-            </div>
-            <div class="item">
-                <h4>6</h4>
-            </div>
-            <div class="item">
-                <h4>7</h4>
-            </div>
-            <div class="item">
-                <h4>8</h4>
-            </div>
-            <div class="item">
-                <h4>9</h4>
-            </div>
-            <div class="item">
-                <h4>10</h4>
-            </div>
-            <div class="item">
-                <h4>11</h4>
-            </div>
-            <div class="item">
-                <h4>12</h4>
-            </div>
-        </div> -->
+                    }
+
+                }
+
+            });
+        </script>
+
         <script>
             $(".client_testimonial_slides").owlCarousel({
                 items: 3,
@@ -875,12 +897,29 @@
                 margin: 15,
                 loop: true,
                 autoplayHoverPause: true,
+
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    // breakpoint from 480 up
+                    992: {
+                        items: 2,
+                    },
+                    // breakpoint from 768 up
+                    1200: {
+                        items: 3,
+                    }
+
+                }
+
             })
         </script>
-        <!-- Testimonial_part_End -->
 
     </main>
     <script src="./assets/js/app.js"></script>
 </body>
+
+
 
 </html>
