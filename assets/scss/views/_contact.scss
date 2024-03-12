@@ -44,7 +44,7 @@
     .bottom {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 40px;
+        gap: 120px;
         margin-bottom: 60px;
 
         .map {
@@ -82,9 +82,11 @@
             }
 
             .text {
+                width: 100%;
+                min-height: 183px;
                 .form_control {
                     min-height: 183px;
-                    border: 0;
+                    border: red;
                     border: 1px solid #ced4da;
                     padding: 12px 18px;
                     border-radius: 4px;
@@ -92,6 +94,9 @@
                     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
                     display: block;
                 }
+            }
+            .submit_btn{
+                margin-top: 1rem;
             }
         }
     }

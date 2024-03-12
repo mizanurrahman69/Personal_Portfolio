@@ -8,6 +8,8 @@
 
         .content {
             text-align: center;
+            width: 50%;
+            margin: auto;
 
             a {
                 margin-bottom: 36px;
@@ -24,16 +26,27 @@
                 margin-top: 0;
                 margin-bottom: 0;
                 font-size: 18px;
+
             }
 
             .social_link {
+                margin-top: 48px;
+                margin-bottom: 10px;
+
                 ul {
                     display: flex;
+                    justify-content: center;
+                    gap: 24px;
 
                     li {
-                        i {
-                            color: var(--white);
+                        a {
+                            font-size: 24px;
+
+                            i {
+                                color: var(--white);
+                            }
                         }
+
                     }
                 }
             }
@@ -41,10 +54,12 @@
 
         .bottom {
             color: var(--white);
+            display: flex;
+            justify-content: space-between;
+            margin-top: 78px;
 
             a {
                 color: var(--white);
-
             }
         }
     }
