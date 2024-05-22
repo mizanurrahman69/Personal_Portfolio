@@ -5,6 +5,7 @@
         .address_section {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
 
             .content {
                 display: flex;
@@ -47,6 +48,21 @@
         gap: 120px;
         margin-bottom: 60px;
 
+        @include xs {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        @include sm {
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+
+        @include md {
+            gap: 60px;
+            grid-template-columns: 1fr;
+        }
+
         .map {
             height: 100%;
             width: 100%;
@@ -63,9 +79,12 @@
 
             .info {
                 display: flex;
-
                 gap: 15px;
                 margin-bottom: 15px;
+
+                @include xs {
+                    flex-wrap: wrap;
+                }
 
                 .col_a {
                     display: grid;
@@ -84,6 +103,8 @@
             .text {
                 width: 100%;
                 min-height: 183px;
+                display: flex;
+
                 .form_control {
                     min-height: 183px;
                     border: red;
@@ -93,9 +114,19 @@
                     width: 100%;
                     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
                     display: block;
+
+                    @include xs {
+                        padding: 10px;
+                    }
+
+                    @include sm {
+                        padding: 12px 10px;
+                    }
+
                 }
             }
-            .submit_btn{
+
+            .submit_btn {
                 margin-top: 1rem;
             }
         }

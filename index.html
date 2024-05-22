@@ -195,6 +195,7 @@
                     </div>
                     <div class="item">
                         <div class="item1">
+                            <div class="bg3d"></div>
                             <h2>Creativity</h2>
                             <p>Duis aute irure dolor in it esse cillum dolore eu fugiat
                                 nulla pari erunt mollit anim id
@@ -360,7 +361,7 @@
         <!-- skill_section_end -->
 
         <!-- portfolio_section_start -->
-        <div id="portfolio_section" class="">
+        <section id="portfolio_section">
             <div class="portfolio_section_content">
                 <div class="container">
                     <div class="tittle">
@@ -404,7 +405,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- portfolio_section_end -->
 
         <!-- service_section_start -->
@@ -748,7 +749,7 @@
         <!-- partner_section_part_end -->
 
         <!-- contact_section_start -->
-        <div class="contact_section">
+        <div class="contact_section" id="contact_section">
             <div class="container">
                 <div class="tittle blog_tittle">
                     <h2>GET IN TOUCH</h2>
@@ -792,7 +793,10 @@
                 <div class="bottom">
 
 
-                    <div class="map">  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.246507971446!2d90.35893571150564!3d23.809831778540698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1670cdb1779%3A0x645bbf4f0aeb1d56!2sTech%20Park%20IT!5e0!3m2!1sen!2sbd!4v1709579360443!5m2!1sen!2sbd" style="border:0;height: 396px; width: 100%; padding: 20px 0px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    <div class="map"> <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.246507971446!2d90.35893571150564!3d23.809831778540698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1670cdb1779%3A0x645bbf4f0aeb1d56!2sTech%20Park%20IT!5e0!3m2!1sen!2sbd!4v1709579360443!5m2!1sen!2sbd"
+                            style="border:0;height: 396px; width: 100%; padding: 20px 0px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
                     <div class="form">
                         <h2>Write me a message*</h2>
@@ -832,12 +836,16 @@
                             aute cupidatat non proident sunt in culd
                             est laborum.</p>
                         <div class="social_link">
-                            <ul>
-                                <li><a href="facebook"><i class="fab fa-facebook"></i></a></li>
+                            <ul class="wrapper">
+                                <li class="icon facebook">
+                                    <span class="tooltip">Facebook</span>
+                                    <span><i class="fab fa-facebook"></i></span>
+                                </li>
+                                <!-- <li><a href="facebook"><i class="fab fa-facebook"></i></a></li>
                                 <li><a href="twitter"><i class="fab fa-twitter"></i></a></li>
                                 <li><a href="linkedin"><i class="fab fa-linkedin"></i></a></li>
                                 <li><a href="youtube"><i class="fab fa-youtube"></i></a></li>
-                                <li><a href="instagram"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="instagram"><i class="fab fa-instagram"></i></a></li> -->
                             </ul>
                         </div>
                     </div>
@@ -903,7 +911,7 @@
                         items: 1,
                     },
                     // breakpoint from 480 up
-                    992: {
+                    768: {
                         items: 2,
                     },
                     // breakpoint from 768 up
@@ -916,10 +924,10 @@
             })
         </script>
 
+        <div id="js_practice"></div>
+
     </main>
     <script src="./assets/js/app.js"></script>
 </body>
 
-
-
-</ht
+</html>

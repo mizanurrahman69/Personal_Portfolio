@@ -11,10 +11,10 @@
     }
 
     .left {
-        .img{
-            
+        .img {
 
-            img{
+
+            img {
                 max-width: 100%;
                 height: auto;
             }
@@ -23,13 +23,21 @@
 
     .right {
         width: 50%;
+
         @include custom_media(0px, 1199.9px) {
             width: unset;
         }
+
         h2 {
             margin-bottom: 30px;
             font-weight: 600;
             font-size: 48px;
+
+            @include xs {
+                font-size: 24px;
+                line-height: 34px;
+                margin-bottom: 20px;
+            }
 
             span {
                 display: block;
@@ -44,6 +52,10 @@
             font-size: 18px;
             line-height: 28px;
             margin-bottom: 25px;
+
+            @include xs {
+                font-size: 14px;
+            }
         }
 
         .feature_list {
@@ -52,9 +64,17 @@
                 align-items: start;
                 margin-bottom: 20px;
 
+                @include xs {
+                    flex-wrap: wrap;
+                }
+
                 .icon {
                     margin-bottom: 30px;
                     margin-right: 20px;
+
+                    @include xs {
+                        margin-bottom: 10px;
+                    }
 
                     .icon_box {
                         width: 60px;

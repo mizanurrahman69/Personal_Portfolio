@@ -4,13 +4,19 @@
   padding-top: 100px;
 
   .service_content {
-    .portfolio{
+    .portfolio {
       color: var(--white);
     }
+
     .service_item {
       gap: 10px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+
+      @include xs {
+        grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+        justify-content: center;
+      }
 
       .s_list {
         border: 1px solid #474747;
@@ -19,6 +25,9 @@
         border-radius: 10px;
         transition: 0.4s;
 
+        @include xs {
+          padding: 30px 20px;
+        }
         .icon_box {
           font-size: 36px;
           color: #fd562a;
@@ -38,6 +47,7 @@
             transform: translate(-50%, -50%);
           }
         }
+
         // .icon_box {
         //   font-size: 36px;
         //   color: #fd562a;

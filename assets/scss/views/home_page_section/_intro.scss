@@ -1,11 +1,12 @@
 #intro {
-    
+
     // border: var(--border);
     .intro_section {
-    padding-top: 120px;
-    @include custom_media(0px, 991.9px){
-padding-top: 80PX;
-    }
+        padding-top: 120px;
+
+        @include custom_media(0px, 991.9px) {
+            padding-top: 80PX;
+        }
 
         .item {
             display: grid;
@@ -27,7 +28,44 @@ padding-top: 80PX;
                 font-family: var(--Poppins);
                 height: 100%;
                 width: 100%;
-                h2 {}
+                position: relative;
+                transition-duration: .3s;
+
+                &:hover {
+                    -webkit-box-shadow: -2px 0px 30px 5px rgba(46, 36, 36, 1);
+                    -moz-box-shadow: -2px 0px 30px 5px rgba(46, 36, 36, 1);
+                    box-shadow: -2px 0px 30px 5px rgba(46, 36, 36, 1);
+                }
+
+                //                 .bg3d {
+                //                     background: #7e3e3e;
+                //                     height: 100%;
+                //                     position: absolute;
+                //                     width: 100%;
+                //                     top: 0;
+                //                     right: 0;
+                // opacity: 0;
+                //                     /* z-index: 0; */
+                //                     &:hover {
+                //                         opacity: 1;
+                //                         rotate: 9deg;
+                //                     }
+                //                 }
+
+                @include xs {
+                    padding: 30px;
+                }
+
+                @include lg {
+                    padding: 41px;
+                }
+
+                h2 {
+                    @include xs {
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
+                }
 
                 p {
                     font-size: 16px;
@@ -35,6 +73,11 @@ padding-top: 80PX;
                     color: #948daa;
                     margin-top: 30px;
                     text-transform: capitalize;
+
+                    @include xs {
+                        margin-top: 20px;
+                        font-size: 14px;
+                    }
                 }
 
 
@@ -54,7 +97,7 @@ padding-top: 80PX;
                     background-color: black;
                     border: 1px solid var(--red);
                     transform: rotate(7deg);
-                    
+
                 }
             }
         }

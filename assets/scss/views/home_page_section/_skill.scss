@@ -20,6 +20,13 @@
             h2 {
                 line-height: normal;
 
+                @include xs {
+                    font-size: 30px;
+                }
+                @include sm {
+                    font-size: 35px;
+                }
+
                 span {
                     font-size: 18px;
                     text-transform: uppercase;

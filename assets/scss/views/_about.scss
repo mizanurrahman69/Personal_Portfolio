@@ -37,6 +37,20 @@
         grid-template-columns: 1fr 1fr;
 
 
+        @include xs() {
+            padding: 50px 0px;
+            gap: 40px;
+        }
+        @include sm() {
+            padding: 70px 0px;
+            gap: 50px;
+
+        }
+        @include md() {
+            padding: 100px 0px;
+            gap: 70px;
+
+        }
         @include lg() {
             gap: 0;
         }
@@ -74,6 +88,13 @@
                 h2 {
                     font-weight: 700;
                     margin-bottom: 40px;
+
+                    @include xs {
+                        font-size: 36px;
+                        line-height: 51px;
+                        margin-bottom: 30px;
+
+                    }
                 }
 
             }
@@ -106,6 +127,10 @@
                                 font-family: 'Open Sans', sans-serif;
                                 font-size: 18px;
                                 color: #615978;
+
+                                @include xs {
+                                    font-size: 14px;
+                                }
                             }
                         }
                     }

@@ -23,7 +23,7 @@
 }
 
 @mixin xl() {
-    @media (min-width: 1200px) and (max-width: 1399.9px) {
+    @media (min-width: 120n0px) and (max-width: 1399.9px) {
         @content();
     }
 }
