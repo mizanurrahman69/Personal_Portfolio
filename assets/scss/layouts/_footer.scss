@@ -54,19 +54,21 @@
 
                     .tooltip {
                         position: absolute;
-                        top: 0;
+                        top: 0; 
                         padding: 5px 8px;
                         border-radius: 5px;
                         opacity: 0;
                         pointer-events: none;
                         transition: all 0.2s ease;
-                        :hover{
+
+                        &:hover {
                             top: -45px;
                             opacity: 1;
                             visibility: visible;
-                            pointer-events: none;
+                            pointer-events: auto;
                         }
-                      ::before {
+
+                        ::before {
                             position: absolute;
                             content: "";
                             height: 8px;
@@ -76,7 +78,7 @@
                             left: 50%;
                             transform: translate(-50%) rotate(45deg);
                             transition: all 0.2s ease;
-                        } 
+                        }
                     }
                 }
             }

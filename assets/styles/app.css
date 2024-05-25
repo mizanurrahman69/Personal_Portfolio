@@ -176,7 +176,8 @@ h3 {
 }
 
 .container {
-  width: 1400px;
+  width: min(100% - 30px, 840px);
+  margin-inline: auto;
   margin: auto;
   padding: 0px 15px;
 }
@@ -428,11 +429,11 @@ nav ul li a:hover::after {
   pointer-events: none;
   transition: all 0.2s ease;
 }
-.footer_section .footer_content .content .social_link .wrapper .tooltip :hover {
+.footer_section .footer_content .content .social_link .wrapper .tooltip:hover {
   top: -45px;
   opacity: 1;
   visibility: visible;
-  pointer-events: none;
+  pointer-events: auto;
 }
 .footer_section .footer_content .content .social_link .wrapper .tooltip ::before {
   position: absolute;

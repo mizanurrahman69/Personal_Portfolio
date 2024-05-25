@@ -1,5 +1,6 @@
 .container {
-    width: 1400px;
+    width: min(100% - 30px, 840px);
+    margin-inline: auto;
 
     // border: var(--border);
     margin: auto;

@@ -33,8 +33,25 @@
         @content();
     }
 }
+
 @mixin custom_media($min, $max) {
     @media (min-width: $min) and (max-width: $max) {
         @content();
     }
 }
+
+
+// #banner,
+// #intro,
+// #about_section,
+// #skill_section,
+// #portfolio_section,
+// #service_section,
+// #feature_section,
+// #testimonial_section,
+// #Blog_section,
+// #partner_section,
+// #contact_section,
+// #section_footer {
+//     display: none;
+// } 
