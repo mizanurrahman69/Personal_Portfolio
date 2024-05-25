@@ -411,6 +411,43 @@ nav ul li a:hover::after {
   display: inline-flex;
   list-style: none;
 }
+.footer_section .footer_content .content .social_link .wrapper button {
+  font-size: 15px;
+  font-weight: bold;
+  color: #2c9caf;
+  background-color: white;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 1em 2em;
+  border-radius: 5px;
+  outline: 2px solid #2c9caf;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+.footer_section .footer_content .content .social_link .wrapper button ::before {
+  content: "";
+  background-color: #2c9caf;
+  outline: 2px solid #70bdca;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  height: 100%;
+  width: 0%;
+  transform: skew(45deg);
+  z-index: -1;
+  transition: all 1s;
+}
+.footer_section .footer_content .content .social_link .wrapper button ::before:hover {
+  width: 250%;
+}
+.footer_section .footer_content .content .social_link .wrapper button:hover {
+  color: white;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
 .footer_section .footer_content .content .social_link .wrapper .icon {
   position: relative;
   background: #ffffff;
@@ -419,6 +456,9 @@ nav ul li a:hover::after {
   height: 50px;
   padding: 15px;
   transition: all 0.2s ease;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .footer_section .footer_content .content .social_link .wrapper .tooltip {
   position: absolute;
@@ -435,7 +475,7 @@ nav ul li a:hover::after {
   visibility: visible;
   pointer-events: auto;
 }
-.footer_section .footer_content .content .social_link .wrapper .tooltip ::before {
+.footer_section .footer_content .content .social_link .wrapper .tooltip .tooltip::before {
   position: absolute;
   content: "";
   height: 8px;
